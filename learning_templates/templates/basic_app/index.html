@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+
+{% extends "basic_app/base.html" %}
+{% load my_extras %}
+  {% block body_block %}
+    <h1>Welcome to Index</h1>
+    <h2>This is an example of template inheritance</h2>
+    {{ text|cut:"hello" }}
+    {{ number|add:"99" }}
+  {% endblock %}
